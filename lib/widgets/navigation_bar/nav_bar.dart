@@ -82,11 +82,11 @@ class NavigationBar extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
+          /*Divider(
             height: 0,
             //color: Colors.black,
             thickness: 1.5,
-          ),
+          ),*/
           ButtonNav(),
         ],
       ),
