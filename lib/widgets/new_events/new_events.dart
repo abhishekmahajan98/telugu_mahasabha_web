@@ -4,20 +4,23 @@ import 'package:marquee_widget/marquee_widget.dart';
 class NewEvents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final double screenHeight = MediaQuery.of(context).size.height;
+    final double screenWidth = MediaQuery.of(context).size.width;
     return Card(
       child: Container(
-        height: 80,
+        height: screenHeight / 10,
         color: Color.fromARGB(255, 255, 244, 198),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset('assets/images/latest_events.png'),
-            /*Container(
-              width: 100,
-              child: Marquee(
-                text:
-                    '5th Annual celebrations on 28th June 2020 virtually from 9AM.',
+            Container(
+              alignment: Alignment.centerLeft,
+              height: screenHeight / 10,
+              width: screenWidth / 7,
+              child: Image.asset(
+                'assets/images/latest_events.png',
               ),
-            )*/
+            ),
             Expanded(
               child: Marquee(
                 child: Text(

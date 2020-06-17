@@ -1,31 +1,14 @@
 import 'package:flutter/material.dart';
-
-import 'package:telugu_mahasabha_web/widgets/body/body.dart';
-import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+import 'package:telugu_mahasabha_web/widgets/home_view/home_view_desktop/home_view_Desktop.dart';
+import 'package:telugu_mahasabha_web/widgets/home_view/home_view_tablet/home_view_tablet.dart';
 
 class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //backgroundColor: Color.fromARGB(255, 255, 244, 198),
-      backgroundColor: Color(0xffe6d385),
-      floatingActionButton: SizedBox(
-        height: 200,
-        width: 150,
-        child: Image.asset(
-          'assets/images/telugu_mata_new.png',
-        ),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
-        child: Column(
-          children: [
-            NavigationBar(),
-            //ButtonNav(),
-            Body(),
-          ],
-        ),
-      ),
+    return ScreenTypeLayout(
+      desktop: HomeViewDesktop(),
+      mobile: HomeViewTablet(),
     );
   }
 }

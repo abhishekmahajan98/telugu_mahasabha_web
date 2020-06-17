@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class ButtonNavElement extends StatelessWidget {
   final String title;
   final Function onTap;
-  ButtonNavElement({this.title, this.onTap});
+  final Color txtclr;
+  ButtonNavElement({this.title, this.onTap, this.txtclr = Colors.white});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class ButtonNavElement extends StatelessWidget {
         child: Text(
           title,
           style: TextStyle(
-            color: Colors.white,
+            color: txtclr,
             fontSize: 20,
           ),
         ),

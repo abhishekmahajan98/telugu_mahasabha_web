@@ -1,7 +1,16 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 
-class PhotoCarousel extends StatelessWidget {
+class PhotoCarousel extends StatefulWidget {
+  final double carouselHeight;
+
+  const PhotoCarousel({Key key, this.carouselHeight}) : super(key: key);
+
+  @override
+  _PhotoCarouselState createState() => _PhotoCarouselState();
+}
+
+class _PhotoCarouselState extends State<PhotoCarousel> {
   final List<AssetImage> imgs = [
     AssetImage('assets/images/home_carousel/1.jpg'),
     AssetImage('assets/images/home_carousel/2.jpg'),
@@ -15,12 +24,16 @@ class PhotoCarousel extends StatelessWidget {
     AssetImage('assets/images/home_carousel/10.jpg'),
     AssetImage('assets/images/home_carousel/12.jpg'),
   ];
+
   @override
   Widget build(BuildContext context) {
+    final double screenHeight = MediaQuery.of(context).size.height;
     return Card(
       color: Colors.transparent,
       child: Container(
-        height: 470,
+        height: widget.carouselHeight == null
+            ? screenHeight * 0.65
+            : widget.carouselHeight,
         //color: Color.fromARGB(255, 0, 0, 255),
         child: Carousel(
           boxFit: BoxFit.cover,
