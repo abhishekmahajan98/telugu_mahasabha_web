@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
 import 'package:telugu_mahasabha_web/widgets/updates_box/updates_box.dart';
 
 class UpdatesBoxTablet extends StatelessWidget {
@@ -10,7 +11,8 @@ class UpdatesBoxTablet extends StatelessWidget {
       child: Container(
         height: screenHeight / 2,
         width: screenWidth * 0.9,
-        color: Colors.blueGrey[900],
+        //color: updatesClr,
+        color: Color.fromARGB(255, 	2, 100, 64),
         child: UpdatesBox(
           screenHeight: screenHeight,
           screenWidth: screenWidth,

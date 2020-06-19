@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
 
 class NavigationBarTablet extends StatelessWidget {
   final double screenHeight;
@@ -15,7 +16,7 @@ class NavigationBarTablet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            color: Color.fromARGB(255, 128, 0, 0),
+            color: navbarClr,
             height: screenHeight / 8,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -36,7 +37,7 @@ class NavigationBarTablet extends StatelessWidget {
                       'రాష్ట్రేతర తెలుగు సమాఖ్య',
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
-                        fontSize: screenHeight / 30,
+                        fontSize: screenHeight / 40,
                         color: Colors.white,
                       ),
                     ),
@@ -44,7 +45,7 @@ class NavigationBarTablet extends StatelessWidget {
                       'RASHTRETARA TELUGU SAMAKHYA',
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
-                        fontSize: screenHeight / 40,
+                        fontSize: screenHeight / 50,
                         color: Colors.white,
                       ),
                     ),
@@ -53,15 +54,13 @@ class NavigationBarTablet extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      height: screenHeight / 10,
-                      width: screenWidth / 10,
-                      child: Image.asset('assets/images/logo.jpg'),
+                    Image.asset('assets/images/logo.jpg',
+                      scale: 2,
                     ),
                     Text(
                       'soc.regn.no.679/2015',
                       style: TextStyle(
-                        fontSize: screenWidth / 80,
+                        fontSize: screenWidth / 50,
                         color: Colors.white,
                       ),
                     ),

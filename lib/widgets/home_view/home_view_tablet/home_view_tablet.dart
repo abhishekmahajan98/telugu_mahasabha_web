@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
 import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar_tablet.dart';
 import 'package:telugu_mahasabha_web/widgets/new_events/new_events.dart';
 import 'package:telugu_mahasabha_web/widgets/photo_carousel/photo_carousel.dart';
@@ -11,7 +12,7 @@ class HomeViewTablet extends StatelessWidget {
     final double screenHeight = MediaQuery.of(context).size.height;
     final double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Color(0xffe6d385),
+      backgroundColor: backgroundClr,
       drawer: SideDrawerTablet(),
       body: ListView(
         children: [

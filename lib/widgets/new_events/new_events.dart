@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marquee_widget/marquee_widget.dart';
+import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
 
 class NewEvents extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class NewEvents extends StatelessWidget {
     return Card(
       child: Container(
         height: screenHeight / 10,
-        color: Color.fromARGB(255, 255, 244, 198),
+        color: neweventsClr,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -28,6 +29,7 @@ class NewEvents extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 20,
+                    color: Colors.white,
                   ),
                 ),
                 //scrollAxis: Axis.horizontal,

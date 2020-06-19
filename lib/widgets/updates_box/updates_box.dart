@@ -37,7 +37,7 @@ class UpdatesBox extends StatelessWidget {
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontSize: 15,
-                    color: Colors.lightBlue,
+                    color: Colors.white,
                   ),
                 ),
               );

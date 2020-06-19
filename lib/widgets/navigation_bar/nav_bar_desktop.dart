@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
 import 'package:telugu_mahasabha_web/constants/navbar_constants.dart';
 import 'package:telugu_mahasabha_web/widgets/button_nav/button_nav.dart';
 
@@ -13,7 +14,7 @@ class NavigationBarDesktop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            color: Color.fromARGB(255, 128, 0, 0),
+            color: navbarClr,
             height: screenHeight / 8,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,23 +51,26 @@ class NavigationBarDesktop extends StatelessWidget {
                     ),
                   ],
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'CONTACT US',
-                      style: navbarText,
-                    ),
-                    Text(
-                      'Phone number: 9825114404',
-                      style: navbarText,
-                    ),
-                    Text(
-                      'E-mail: rashtretaratelugusamakhya@gmail.com',
-                      style: navbarText,
-                    )
-                  ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:10),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'CONTACT US',
+                        style: navbarText,
+                      ),
+                      Text(
+                        'Phone number: 9825114404',
+                        style: navbarText,
+                      ),
+                      Text(
+                        'E-mail: rashtretaratelugusamakhya@gmail.com',
+                        style: navbarText,
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
