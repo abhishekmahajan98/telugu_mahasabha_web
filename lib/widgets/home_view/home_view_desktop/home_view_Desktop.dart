@@ -9,6 +9,7 @@ class HomeViewDesktop extends StatelessWidget {
     return Scaffold(
       //backgroundColor: Color.fromARGB(255, 255, 244, 198),
       backgroundColor: backgroundClr,
+      
       floatingActionButton: SizedBox(
         height: 200,
         width: 150,

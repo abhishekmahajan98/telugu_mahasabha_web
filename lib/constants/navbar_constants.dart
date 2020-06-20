@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const navbarTitle = TextStyle(
   fontSize: 34,
   fontWeight: FontWeight.w600,
-  color: Colors.white,
+  color: Color.fromARGB(255, 0, 0, 128),
 );
 
-const navbarText = TextStyle(color: Colors.white);
+const navbarText = TextStyle(color: Color.fromARGB(255, 0, 0, 128));

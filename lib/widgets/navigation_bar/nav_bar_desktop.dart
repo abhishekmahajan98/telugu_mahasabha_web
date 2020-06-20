@@ -14,6 +14,9 @@ class NavigationBarDesktop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
+
+
+
             color: navbarClr,
             height: screenHeight / 8,
             child: Row(

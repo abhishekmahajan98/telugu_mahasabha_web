@@ -11,8 +11,8 @@ class UpdatesBoxTablet extends StatelessWidget {
       child: Container(
         height: screenHeight / 2,
         width: screenWidth * 0.9,
-        //color: updatesClr,
-        color: Color.fromARGB(255, 	2, 100, 64),
+        color: updatesClr,
+        //color: Color.fromARGB(255, 	2, 100, 64),
         child: UpdatesBox(
           screenHeight: screenHeight,
           screenWidth: screenWidth,
