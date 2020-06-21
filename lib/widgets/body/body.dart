@@ -28,7 +28,6 @@ class Body extends StatelessWidget {
                  PhotoCarousel(),
                   
 
-
                 ],
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
+import 'package:telugu_mahasabha_web/widgets/Footer/footer.dart';
 import 'package:telugu_mahasabha_web/widgets/body/body.dart';
 import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar_desktop.dart';
 
@@ -19,11 +20,12 @@ class HomeViewDesktop extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
-        child: Column(
+        child: ListView(
           children: [
             NavigationBarDesktop(),
             //ButtonNav(),
             Body(),
+            Footer(),
           ],
         ),
       ),

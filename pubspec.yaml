@@ -30,7 +30,7 @@ dependencies:
   marquee_widget: ^0.8.0
   carousel_pro: ^1.0.0
   responsive_builder: ^0.2.0+2
-
+  font_awesome_flutter: ^8.8.1
 
 dev_dependencies:
   flutter_test:
