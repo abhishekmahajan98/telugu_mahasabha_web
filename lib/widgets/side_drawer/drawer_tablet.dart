@@ -12,7 +12,7 @@ class SideDrawerTablet extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             DrawerHeader(
-              child: Image.asset('assets/images/logo.jpg'),
+              child: Image.asset('assets/images/newlogo.png'),
             ),
             ButtonNavElement(
               title: 'Home',

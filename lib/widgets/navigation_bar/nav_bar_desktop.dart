@@ -14,10 +14,13 @@ class NavigationBarDesktop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-
-
-
-            color: navbarClr,
+            decoration: BoxDecoration(
+                image: new DecorationImage(
+                  image: new AssetImage('assets/images/1.jpg'),
+                  fit: BoxFit.fill,
+                )
+            ),
+            //color: navbarClr,
             height: screenHeight / 8,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -30,13 +33,15 @@ class NavigationBarDesktop extends StatelessWidget {
                       width: screenWidth / 10,
                       child: Padding(
                         padding: const EdgeInsets.all(5),
-                        child: Image.asset('assets/images/logo.jpg'),
+                        child: Image.asset('assets/images/newlogo.png'),
                       ),
                     ),
                     Text(
                       'soc.regn.no.679/2015',
                       style: TextStyle(
-                          fontSize: screenWidth / 150, color: Colors.white),
+                          fontSize: screenWidth / 150,
+                          color: Color.fromARGB(255, 0, 0, 128),
+                          fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),

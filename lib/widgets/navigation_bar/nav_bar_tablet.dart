@@ -38,7 +38,7 @@ class NavigationBarTablet extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: screenHeight / 40,
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 0, 0, 128),
                       ),
                     ),
                     Text(
@@ -46,7 +46,7 @@ class NavigationBarTablet extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: screenHeight / 50,
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 0, 0, 128),
                       ),
                     ),
                   ],
@@ -54,14 +54,16 @@ class NavigationBarTablet extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('assets/images/logo.jpg',
+                  Image.asset('assets/images/newlogo.png',
                       scale: 2,
                     ),
                     Text(
                       'soc.regn.no.679/2015',
                       style: TextStyle(
                         fontSize: screenWidth / 50,
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 0, 0, 128),
+                        fontWeight: FontWeight.bold
+                        ,
                       ),
                     ),
                   ],
