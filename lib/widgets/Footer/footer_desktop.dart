@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:telugu_mahasabha_web/constants/footerConstants.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class Footer extends StatelessWidget {
@@ -25,16 +25,13 @@ class Footer extends StatelessWidget {
             height: screenHeight/3,
             child:Row(
               children: [
-                Expanded(flex: 1,
-                 child: Container(
-                  color: Colors.black87,
-                ),),
+
                 Expanded(
                     flex: 1,
                     child:Material(
                     color: Colors.black87,
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(45,0, 0, 0),
+                        padding: EdgeInsets.fromLTRB(screenWidth/5,0, 0, 0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +73,7 @@ class Footer extends StatelessWidget {
                     child:Material(
                       color: Colors.black87,
                         child: Padding(
-                         padding: const EdgeInsets.fromLTRB(0,50, 0, 0),
+                         padding:  EdgeInsets.fromLTRB(0,screenHeight/20, 0, 0),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -117,7 +114,7 @@ class Footer extends StatelessWidget {
                   child:Material(
                   color: Colors.black87,
                     child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0,50, 0, 0),
+                        padding:  EdgeInsets.fromLTRB(0,screenHeight/20, 0, 0),
                       child: Column(
                        mainAxisAlignment: MainAxisAlignment.start,
                        crossAxisAlignment: CrossAxisAlignment.start,
@@ -177,10 +174,7 @@ class Footer extends StatelessWidget {
                     )
                   ),
                 ),
-                Expanded(flex: 1,
-                  child: Container(
-                    color: Colors.black87,
-                  ),),
+
                 ]
                 )
                )

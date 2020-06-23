@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
-import 'package:telugu_mahasabha_web/widgets/Footer/footer.dart';
+import 'package:telugu_mahasabha_web/widgets/Footer/footer_desktop.dart';
 import 'package:telugu_mahasabha_web/widgets/body/body.dart';
 import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar_desktop.dart';
 
