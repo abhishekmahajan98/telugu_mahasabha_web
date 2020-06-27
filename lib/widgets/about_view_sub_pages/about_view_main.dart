@@ -25,6 +25,7 @@ class AboutViewMain extends StatelessWidget {
             fontSize: screenWidth == null ? screenWidth / 30 : 18,
           ),
         ),
+        SizedBox(height: screenWidth/5,),
       ],
     );
   }

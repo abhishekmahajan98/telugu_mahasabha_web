@@ -6,4 +6,4 @@ const navbarTitle = TextStyle(
   color: Color.fromARGB(255, 0, 0, 128),
 );
 
-const navbarText = TextStyle(color: Color.fromARGB(255, 0, 0, 128));
+const navbarText = TextStyle(color: Color.fromARGB(255, 0, 0, 128),fontWeight: FontWeight.w600);
