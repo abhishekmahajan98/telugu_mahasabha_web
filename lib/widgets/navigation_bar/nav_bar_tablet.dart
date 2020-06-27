@@ -27,7 +27,10 @@ class NavigationBarTablet extends StatelessWidget {
                     size: screenHeight / 25,
                     color: Colors.white,
                   ),
-                  onPressed: () => Scaffold.of(context).openDrawer(),
+                  onPressed: () {
+                    print('drawer open!');
+                    Scaffold.of(context).openDrawer();
+                  },
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -54,7 +57,8 @@ class NavigationBarTablet extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('assets/images/logo.jpg',
+                    Image.asset(
+                      'assets/images/logo.jpg',
                       scale: 2,
                     ),
                     Text(

@@ -16,13 +16,16 @@ class SideDrawerTablet extends StatelessWidget {
             ),
             ButtonNavElement(
               title: 'Home',
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/');
+              },
               fontSize: 30,
-
             ),
             ButtonNavElement(
               title: 'About us',
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/about');
+              },
               fontSize: 30,
             ),
             ButtonNavElement(

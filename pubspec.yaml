@@ -30,7 +30,7 @@ dependencies:
   marquee_widget: ^0.8.0
   carousel_pro: ^1.0.0
   responsive_builder: ^0.2.0+2
-
+  font_awesome_flutter: ^8.8.1
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +50,8 @@ flutter:
   assets:
     - assets/images/
     - assets/images/home_carousel/
+    - assets/images/registration/
+    - assets/images/constitution/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

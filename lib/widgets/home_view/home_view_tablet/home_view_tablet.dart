@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
+import 'package:telugu_mahasabha_web/widgets/footer/footer_tablet.dart';
 import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar_tablet.dart';
 import 'package:telugu_mahasabha_web/widgets/new_events/new_events.dart';
 import 'package:telugu_mahasabha_web/widgets/photo_carousel/photo_carousel.dart';
@@ -25,6 +26,7 @@ class HomeViewTablet extends StatelessWidget {
             carouselHeight: screenHeight * 0.4,
           ),
           UpdatesBoxTablet(),
+          FooterTablet(),
         ],
       ),
     );

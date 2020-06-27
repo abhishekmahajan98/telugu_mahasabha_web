@@ -14,9 +14,6 @@ class NavigationBarDesktop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-
-
-
             color: navbarClr,
             height: screenHeight / 8,
             child: Row(
@@ -55,7 +52,7 @@ class NavigationBarDesktop extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal:10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,

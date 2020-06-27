@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telugu_mahasabha_web/views/about_view.dart';
 import 'package:telugu_mahasabha_web/views/home_view.dart';
 
 void main() {
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Telugu Mahasabha',
-      home: HomeView(),
+      routes: {
+        '/': (context) => HomeView(),
+        '/about': (context) => AboutView(),
+      },
     );
   }
 }

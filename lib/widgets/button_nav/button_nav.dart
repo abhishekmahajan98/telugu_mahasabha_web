@@ -14,11 +14,15 @@ class ButtonNav extends StatelessWidget {
         children: [
           ButtonNavElement(
             title: 'Home',
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, '/');
+            },
           ),
           ButtonNavElement(
             title: 'About us',
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, '/about');
+            },
           ),
           ButtonNavElement(
             title: 'RTS Events',
