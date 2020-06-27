@@ -8,53 +8,56 @@ class FooterDesktop extends StatelessWidget {
     //double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Card(
-      color: Colors.black,
+      color: Colors.black87,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                ListTile(
-                  isThreeLine: true,
-                  dense: true,
-                  title: Text(
-                    'Correspondence Address',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontWeight: FontWeight.w600,
-                      fontSize: screenWidth / 60,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ListTile(
+                    //isThreeLine: true,
+                    title: Text(
+                      'Correspondence Address',
+                      style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.w600,
+                        fontSize: screenWidth / 60,
+                      ),
+                    ),
+                    subtitle: Text(
+                      '12 RATRANI BUNGLOW,\nOPP TO SAIBABA MANDIR\nRAMDEVNAGAR SATTELITE,\nAHMEDABAD,GUJARAT-380015',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: screenWidth / 100,
+                      ),
                     ),
                   ),
-                  subtitle: Text(
-                    '12 RATRANI BUNGLOW,\nOPP TO SAIBABA MANDIR\nRAMDEVNAGAR SATTELITE,\nAHMEDABAD,GUJARAT-380015',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: screenWidth / 100,
+                  ListTile(
+                    isThreeLine: true,
+                    title: Text(
+                      'Office Address',
+                      style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.w600,
+                        fontSize: screenWidth / 60,
+                      ),
+                    ),
+                    subtitle: Text(
+                      '12 RATRANI BUNGLOW,\nOPP TO SAIBABA MANDIR\nRAMDEVNAGAR SATTELITE,\nAHMEDABAD,GUJARAT-380015',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: screenWidth / 100,
+                      ),
                     ),
                   ),
-                ),
-                ListTile(
-                  isThreeLine: true,
-                  title: Text(
-                    'Office Address',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontWeight: FontWeight.w600,
-                      fontSize: screenWidth / 60,
-                    ),
-                  ),
-                  subtitle: Text(
-                    '12 RATRANI BUNGLOW,\nOPP TO SAIBABA MANDIR\nRAMDEVNAGAR SATTELITE,\nAHMEDABAD,GUJARAT-380015',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: screenWidth / 100,
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Expanded(
@@ -74,26 +77,31 @@ class FooterDesktop extends StatelessWidget {
                 ),
                 ButtonNavElement(
                   title: 'Home',
+                  fontSize: screenWidth / 100,
                   onTap: () {
                     Navigator.pushNamed(context, '/');
                   },
                 ),
                 ButtonNavElement(
                   title: 'About us',
+                  fontSize: screenWidth / 100,
                   onTap: () {
                     Navigator.pushNamed(context, '/about');
                   },
                 ),
                 ButtonNavElement(
                   title: 'RTS Events',
+                  fontSize: screenWidth / 100,
                   onTap: () {},
                 ),
                 ButtonNavElement(
                   title: 'Zonal Activities',
+                  fontSize: screenWidth / 100,
                   onTap: () {},
                 ),
                 ButtonNavElement(
                   title: 'Meetings',
+                  fontSize: screenWidth / 100,
                   onTap: () {},
                 ),
               ],
@@ -144,15 +152,7 @@ class FooterDesktop extends StatelessWidget {
                 ),
                 ListTile(
                   title: Text(
-                    'Ph no: 9825114404',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                ListTile(
-                  title: Text(
-                    'E-mail: rashtretaratelugusamakhya@gmail.com',
+                    'Ph no: 9825114404\n\nE-mail: rashtretaratelugusamakhya@gmail.com',
                     style: TextStyle(
                       color: Colors.white,
                     ),

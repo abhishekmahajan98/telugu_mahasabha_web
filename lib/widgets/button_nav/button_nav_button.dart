@@ -5,7 +5,8 @@ class ButtonNavElement extends StatelessWidget {
   final Function onTap;
   final Color txtclr;
   final double fontSize;
-  ButtonNavElement({this.title, this.onTap, this.txtclr = Colors.white,this.fontSize=20});
+  ButtonNavElement(
+      {this.title, this.onTap, this.txtclr = Colors.white, this.fontSize = 20});
 
   @override
   Widget build(BuildContext context) {

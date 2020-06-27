@@ -3,6 +3,7 @@ import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
 import 'package:telugu_mahasabha_web/constants/photo_lists.dart';
 import 'package:telugu_mahasabha_web/widgets/about_view_sub_pages/about_view_main.dart';
 import 'package:telugu_mahasabha_web/widgets/about_view_sub_pages/custom_photo_view.dart';
+import 'package:telugu_mahasabha_web/widgets/footer/footer_desktop.dart';
 
 import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar_desktop.dart';
 
@@ -206,6 +207,7 @@ class _AboutViewDesktopState extends State<AboutViewDesktop> {
                 ),
               ],
             ),
+            FooterDesktop(),
           ],
         ),
       ),

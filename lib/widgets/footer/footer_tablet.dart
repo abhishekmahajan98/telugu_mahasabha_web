@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:telugu_mahasabha_web/widgets/button_nav/button_nav_button.dart';
 
 class FooterTablet extends StatelessWidget {
   @override
@@ -8,7 +7,7 @@ class FooterTablet extends StatelessWidget {
     //double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Card(
-      color: Colors.black,
+      color: Colors.black87,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -58,11 +57,8 @@ class FooterTablet extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
-            color: Colors.red,
-            thickness: 1.5,
-          ),
-          Container(
+
+          /*Container(
             //height: screenHeight / 2,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -108,10 +104,7 @@ class FooterTablet extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
-            color: Colors.red,
-            thickness: 1.5,
-          ),
+          */
           Container(
             //height: screenHeight / 3,
             child: Column(

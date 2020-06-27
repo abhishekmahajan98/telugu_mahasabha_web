@@ -12,29 +12,45 @@ class ButtonNav extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          ButtonNavElement(
-            title: 'Home',
-            onTap: () {
-              Navigator.pushNamed(context, '/');
-            },
+          FlatButton(
+            onPressed: () => Navigator.pushNamed(context, '/'),
+            hoverColor: navbarClr,
+            color: buttonbarClr,
+            child: ButtonNavElement(
+              title: 'Home',
+            ),
           ),
-          ButtonNavElement(
-            title: 'About us',
-            onTap: () {
-              Navigator.pushNamed(context, '/about');
-            },
+          FlatButton(
+            onPressed: () => Navigator.pushNamed(context, '/about'),
+            hoverColor: navbarClr,
+            color: buttonbarClr,
+            child: ButtonNavElement(
+              title: 'About us',
+            ),
           ),
-          ButtonNavElement(
-            title: 'RTS Events',
-            onTap: () {},
+          FlatButton(
+            onPressed: () {},
+            hoverColor: navbarClr,
+            color: buttonbarClr,
+            child: ButtonNavElement(
+              title: 'RTS Events',
+            ),
           ),
-          ButtonNavElement(
-            title: 'Zonal Activities',
-            onTap: () {},
+          FlatButton(
+            onPressed: () {},
+            hoverColor: navbarClr,
+            color: buttonbarClr,
+            child: ButtonNavElement(
+              title: 'Zonal Activities',
+            ),
           ),
-          ButtonNavElement(
-            title: 'Meetings',
-            onTap: () {},
+          FlatButton(
+            onPressed: () {},
+            hoverColor: navbarClr,
+            color: buttonbarClr,
+            child: ButtonNavElement(
+              title: 'Meetings',
+            ),
           ),
         ],
       ),
