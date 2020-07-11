@@ -29,6 +29,13 @@ class SideDrawerTablet extends StatelessWidget {
               fontSize: 30,
             ),
             ButtonNavElement(
+              title: 'Members',
+              onTap: (){
+                Navigator.pushNamed(context, '/members');
+              },
+              fontSize: 30,
+            ),
+            ButtonNavElement(
               title: 'RTS Events',
               onTap: () {},
               fontSize: 30,

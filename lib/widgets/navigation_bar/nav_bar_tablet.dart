@@ -61,13 +61,13 @@ class NavigationBarTablet extends StatelessWidget {
               children: [
                 Image.asset(
                   'assets/images/newlogo.png',
-                  scale: 2,
+                  scale: 3,
                 ),
                 Text(
                   'soc.regn.no.679/2015',
                   style: TextStyle(
                     fontSize: screenWidth / 50,
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 0, 0, 128),
                   ),
                 ),
               ],

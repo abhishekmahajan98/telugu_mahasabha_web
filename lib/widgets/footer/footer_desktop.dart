@@ -34,7 +34,7 @@ class FooterDesktop extends StatelessWidget {
                       '12 RATRANI BUNGLOW,\nOPP TO SAIBABA MANDIR\nRAMDEVNAGAR SATTELITE,\nAHMEDABAD,GUJARAT-380015',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: screenWidth / 100,
+                        fontSize: screenWidth / 120,
                       ),
                     ),
                   ),
@@ -49,10 +49,10 @@ class FooterDesktop extends StatelessWidget {
                       ),
                     ),
                     subtitle: Text(
-                      '12 RATRANI BUNGLOW,\nOPP TO SAIBABA MANDIR\nRAMDEVNAGAR SATTELITE,\nAHMEDABAD,GUJARAT-380015',
+                      'PLOT NO.2-4-713, ROAD NO.5A,\nNEW NAGOLE COLONY,\nMOHAN NAGAR, KOTHAPET,\nHYDERABAD-500035',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: screenWidth / 100,
+                        fontSize: screenWidth / 120,
                       ),
                     ),
                   ),

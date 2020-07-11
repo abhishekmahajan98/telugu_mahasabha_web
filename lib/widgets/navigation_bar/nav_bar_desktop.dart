@@ -38,7 +38,8 @@ class NavigationBarDesktop extends StatelessWidget {
                     Text(
                       'soc.regn.no.679/2015',
                       style: TextStyle(
-                          fontSize: screenWidth / 150, color: Colors.white),
+                          fontSize: screenWidth / 150,
+                        color: Color.fromARGB(255, 0, 0, 128),),
                     ),
                   ],
                 ),

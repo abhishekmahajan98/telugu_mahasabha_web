@@ -47,7 +47,7 @@ class FooterTablet extends StatelessWidget {
                     ),
                   ),
                   subtitle: Text(
-                    '12 RATRANI BUNGLOW,\nOPP TO SAIBABA MANDIR\nRAMDEVNAGAR SATTELITE,\nAHMEDABAD,GUJARAT-380015',
+                    'PLOT NO.2-4-713, ROAD NO.5A,\nNEW NAGOLE COLONY,\nMOHAN NAGAR, KOTHAPET,\nHYDERABAD-500035',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: screenWidth / 40,
@@ -111,62 +111,71 @@ class FooterTablet extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ListTile(
-                  title: Text(
-                    'Reach Us',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontWeight: FontWeight.w600,
-                      fontSize: screenWidth / 25,
+               Padding(
+                 padding: EdgeInsets.fromLTRB(screenWidth/40, 0,0,0),
+                 child: Text(
+                      'Reach Us',
+                      style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.w600,
+                        fontSize: screenWidth / 25,
+                      ),
                     ),
-                  ),
-                ),
-                ListTile(
-                  title: Row(
-                    children: [
-                      IconButton(
-                        // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-                        icon: FaIcon(
-                          FontAwesomeIcons.facebook,
-                          color: Colors.white,
-                          size: 28,
+               ),
+
+               Padding(
+                 padding: EdgeInsets.fromLTRB(screenWidth/40, 0,0,0),
+                 child: Row(
+                      children: [
+                        IconButton(
+                          // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+                          icon: FaIcon(
+                            FontAwesomeIcons.facebook,
+                            color: Colors.white,
+                            size: 28,
+                          ),
+                          onPressed: () {},
                         ),
-                        onPressed: () {},
-                      ),
-                      SizedBox(
-                        width: screenWidth / 30,
-                      ),
-                      IconButton(
-                        icon: FaIcon(
-                          FontAwesomeIcons.youtube,
-                          color: Color.fromARGB(255, 255, 0, 0),
-                          size: 28,
+                        SizedBox(
+                          width: screenWidth / 30,
                         ),
-                        onPressed: () {
-                          print("Pressed");
-                        },
+                        IconButton(
+                          icon: FaIcon(
+                            FontAwesomeIcons.youtube,
+                            color: Color.fromARGB(255, 255, 0, 0),
+                            size: 28,
+                          ),
+                          onPressed: () {
+                            print("Pressed");
+                          },
+                        ),
+                      ],
+                    ),
+               ),
+
+                 Padding(
+                   padding: EdgeInsets.fromLTRB(screenWidth/40, 0,0,screenWidth/40),
+                   child: Text(
+                      'Ph no: 9825114404',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: screenWidth / 40,
                       ),
-                    ],
-                  ),
-                ),
-                ListTile(
-                  title: Text(
-                    'Ph no: 9825114404',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: screenWidth / 40,
                     ),
+                 ),
+
+
+                   Padding(
+                     padding: EdgeInsets.fromLTRB(screenWidth/40, 0,0,0),
+                     child: Text(
+                      'E-mail: rashtretaratelugusamakhya@gmail.com',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: screenWidth / 40,
+                      ),
                   ),
-                ),
-                ListTile(
-                  title: Text(
-                    'E-mail: rashtretaratelugusamakhya@gmail.com',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: screenWidth / 40,
-                    ),
-                  ),
-                ),
+                   ),
+
               ],
             ),
           ),

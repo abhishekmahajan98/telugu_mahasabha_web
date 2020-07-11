@@ -25,7 +25,7 @@ class NewEvents extends StatelessWidget {
             Expanded(
               child: Marquee(
                 child: Text(
-                  '5th Annual celebrations on 28th June 2020 virtually from 9AM.',
+                  'Second Part of 5th Annual celebrations International Kavi Sammelanam will be held virtually on  5th July 2020 from 9:15 am to 6 pm.',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 20,
@@ -34,8 +34,8 @@ class NewEvents extends StatelessWidget {
                 ),
                 //scrollAxis: Axis.horizontal,
                 textDirection: TextDirection.ltr,
-                //animationDuration: Duration(seconds: 1),
-                backDuration: Duration(milliseconds: 5000),
+                animationDuration: Duration(seconds: 10),
+                //backDuration: Duration(milliseconds: 5000),
                 //pauseDuration: Duration(milliseconds: 2500),
                 directionMarguee: DirectionMarguee.oneDirection,
               ),

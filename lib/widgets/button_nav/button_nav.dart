@@ -29,6 +29,14 @@ class ButtonNav extends StatelessWidget {
             ),
           ),
           FlatButton(
+            onPressed: () => Navigator.pushNamed(context, '/members'),
+            hoverColor: navbarClr,
+            color: buttonbarClr,
+            child: ButtonNavElement(
+              title: 'Members',
+            ),
+          ),
+          FlatButton(
             onPressed: () {},
             hoverColor: navbarClr,
             color: buttonbarClr,
