@@ -4,6 +4,9 @@ import 'package:telugu_mahasabha_web/constants/photo_lists.dart';
 import 'package:telugu_mahasabha_web/widgets/about_view_sub_pages/about_view_main.dart';
 import 'package:telugu_mahasabha_web/widgets/about_view_sub_pages/custom_photo_view.dart';
 import 'package:telugu_mahasabha_web/widgets/footer/footer_tablet.dart';
+import 'package:telugu_mahasabha_web/widgets/members_view_sub_pages/convenors_advisors.dart';
+import 'package:telugu_mahasabha_web/widgets/members_view_sub_pages/executive_members.dart';
+import 'package:telugu_mahasabha_web/widgets/members_view_sub_pages/members_view_main.dart';
 import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar_tablet.dart';
 import 'package:telugu_mahasabha_web/widgets/side_drawer/drawer_tablet.dart';
 
@@ -83,84 +86,143 @@ class _AboutViewTabletState extends State<AboutViewTablet> {
           }
         },
       ),
+      MembersViewMain(
+        screenWidth: screenWidth,
+      ),
+      ExecutiveMembers(
+        screenWidth: screenWidth,
+      ),
+      ConvenorsAdvisors(
+        screenWidth: screenWidth,
+      )
     ];
     List<String> subpageName = [
       'About Us',
       'Registration',
       'Constitution',
+      'Core Commitee',
+      'Executive Committee',
+      'Conveners and Advisors'
     ];
 
     return Scaffold(
       backgroundColor: backgroundClr,
       drawer: SideDrawerTablet(),
-      body: ListView(
-        children: [
-          NavigationBarTablet(
-            screenHeight: screenHeight,
-            screenWidth: screenWidth,
+      body: Container(
+        decoration: BoxDecoration(
+          image: new DecorationImage(
+            image: new AssetImage('assets/images/backgroundimage.jpg'),
+            fit: BoxFit.fill,
           ),
-          Card(
-            color: buttonbarClr,
-            child: ExpansionTile(
-              // /backgroundColor: buttonbarClr,
-              title: Center(
-                child: Text(
-                  subpageName[_selectedPage],
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              children: [
-                ListTile(
-                  onTap: () {
-                    setState(() {
-                      _selectedPage = 0;
-                    });
-                  },
-                  leading: Text(
-                    subpageName[0],
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                ListTile(
-                  onTap: () {
-                    setState(() {
-                      _selectedPage = 1;
-                    });
-                  },
-                  leading: Text(
-                    subpageName[1],
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                ListTile(
-                  onTap: () {
-                    setState(() {
-                      _selectedPage = 2;
-                    });
-                  },
-                  leading: Text(
-                    subpageName[2],
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ],
+        ),
+        child: ListView(
+          children: [
+            NavigationBarTablet(
+              screenHeight: screenHeight,
+              screenWidth: screenWidth,
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: subpages[_selectedPage],
-          ),
-          FooterTablet(),
-        ],
+            Card(
+              color: buttonbarClr,
+              child: ExpansionTile(
+                // /backgroundColor: buttonbarClr,
+                title: Center(
+                  child: Text(
+                    subpageName[_selectedPage],
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                children: [
+                  ListTile(
+                    onTap: () {
+                      setState(() {
+                        _selectedPage = 0;
+                      });
+                    },
+                    leading: Text(
+                      subpageName[0],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    onTap: () {
+                      setState(() {
+                        _selectedPage = 1;
+                      });
+                    },
+                    leading: Text(
+                      subpageName[1],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    onTap: () {
+                      setState(() {
+                        _selectedPage = 2;
+                      });
+                    },
+                    leading: Text(
+                      subpageName[2],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    onTap: () {
+                      setState(() {
+                        _selectedPage = 3;
+                      });
+                    },
+                    leading: Text(
+                      subpageName[3],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    onTap: () {
+                      setState(() {
+                        _selectedPage = 4;
+                      });
+                    },
+                    leading: Text(
+                      subpageName[4],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    onTap: () {
+                      setState(() {
+                        _selectedPage = 5;
+                      });
+                    },
+                    leading: Text(
+                      subpageName[5],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: subpages[_selectedPage],
+            ),
+            FooterTablet(),
+          ],
+        ),
       ),
     );
   }

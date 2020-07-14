@@ -17,14 +17,22 @@ class HomeViewDesktop extends StatelessWidget {
           'assets/images/telugu_mata_new.png',
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
-        child: ListView(
-          children: [
-            NavigationBarDesktop(),
-            DesktopHomeViewBody(),
-            FooterDesktop(),
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+          image: new DecorationImage(
+            image: new AssetImage('assets/images/backgroundimage.jpg'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
+          child: ListView(
+            children: [
+              NavigationBarDesktop(),
+              DesktopHomeViewBody(),
+              FooterDesktop(),
+            ],
+          ),
         ),
       ),
     );

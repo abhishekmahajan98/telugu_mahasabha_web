@@ -15,19 +15,27 @@ class HomeViewTablet extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundClr,
       drawer: SideDrawerTablet(),
-      body: ListView(
-        children: [
-          NavigationBarTablet(
-            screenHeight: screenHeight,
-            screenWidth: screenWidth,
+      body: Container(
+        decoration: BoxDecoration(
+          image: new DecorationImage(
+            image: new AssetImage('assets/images/backgroundimage.jpg'),
+            fit: BoxFit.fill,
           ),
-          NewEvents(),
-          PhotoCarousel(
-            carouselHeight: screenHeight * 0.4,
-          ),
-          UpdatesBoxTablet(),
-          FooterTablet(),
-        ],
+        ),
+        child: ListView(
+          children: [
+            NavigationBarTablet(
+              screenHeight: screenHeight,
+              screenWidth: screenWidth,
+            ),
+            NewEvents(),
+            PhotoCarousel(
+              carouselHeight: screenHeight * 0.4,
+            ),
+            UpdatesBoxTablet(),
+            FooterTablet(),
+          ],
+        ),
       ),
     );
   }

@@ -4,6 +4,9 @@ import 'package:telugu_mahasabha_web/constants/photo_lists.dart';
 import 'package:telugu_mahasabha_web/widgets/about_view_sub_pages/about_view_main.dart';
 import 'package:telugu_mahasabha_web/widgets/about_view_sub_pages/custom_photo_view.dart';
 import 'package:telugu_mahasabha_web/widgets/footer/footer_desktop.dart';
+import 'package:telugu_mahasabha_web/widgets/members_view_sub_pages/convenors_advisors.dart';
+import 'package:telugu_mahasabha_web/widgets/members_view_sub_pages/executive_members.dart';
+import 'package:telugu_mahasabha_web/widgets/members_view_sub_pages/members_view_main.dart';
 
 import 'package:telugu_mahasabha_web/widgets/navigation_bar/nav_bar_desktop.dart';
 
@@ -97,118 +100,201 @@ class _AboutViewDesktopState extends State<AboutViewDesktop> {
         },
         //onTapListImage: changeConstitutionImageIndex,
       ),
+      MembersViewMain(
+        screenWidth: screenWidth,
+      ),
+      ExecutiveMembers(
+        screenWidth: screenWidth,
+      ),
+      ConvenorsAdvisors(
+        screenWidth: screenWidth,
+      )
     ];
     return Scaffold(
       backgroundColor: backgroundClr,
-      body: Padding(
-        padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-        child: ListView(
-          children: [
-            NavigationBarDesktop(),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Card(
-                  child: Container(
-                    width: screenWidth / 7,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Container(
-                          color: Color.fromARGB(255, 253, 184, 57),
-                          height: screenHeight / 10,
-                          alignment: Alignment.center,
-                          child: Text(
-                            'About us',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: screenWidth / 60,
-                            ),
-                          ),
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _subPageSelected = 0;
-                            });
-                          },
-                          child: Container(
-                            padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+      body: Container(
+        decoration: BoxDecoration(
+          image: new DecorationImage(
+            image: new AssetImage('assets/images/backgroundimage.jpg'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        child: Padding(
+          padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+          child: ListView(
+            children: [
+              NavigationBarDesktop(),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Card(
+                    child: Container(
+                      width: screenWidth / 7,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Container(
+                            color: Color.fromARGB(255, 253, 184, 57),
+                            height: screenHeight / 10,
+                            alignment: Alignment.center,
                             child: Text(
-                              'About Us',
+                              'About us',
                               style: TextStyle(
-                                fontSize: screenWidth / 90,
-                                color: _subPageSelected == 0
-                                    ? Color.fromARGB(255, 0, 0, 128)
-                                    : Colors.black,
-                                fontWeight: _subPageSelected == 0
-                                    ? FontWeight.bold
-                                    : FontWeight.normal,
+                                color: Colors.white,
+                                fontSize: screenWidth / 60,
                               ),
                             ),
                           ),
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _subPageSelected = 1;
-                            });
-                          },
-                          child: Container(
-                            padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
-                            child: Text(
-                              'Registration',
-                              style: TextStyle(
-                                fontSize: screenWidth / 90,
-                                color: _subPageSelected == 1
-                                    ? Color.fromARGB(255, 0, 0, 128)
-                                    : Colors.black,
-                                fontWeight: _subPageSelected == 1
-                                    ? FontWeight.bold
-                                    : FontWeight.normal,
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _subPageSelected = 0;
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                              child: Text(
+                                'About Us',
+                                style: TextStyle(
+                                  fontSize: screenWidth / 90,
+                                  color: _subPageSelected == 0
+                                      ? Color.fromARGB(255, 0, 0, 128)
+                                      : Colors.black,
+                                  fontWeight: _subPageSelected == 0
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _subPageSelected = 2;
-                            });
-                          },
-                          child: Container(
-                            padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
-                            child: Text(
-                              'Constitution',
-                              style: TextStyle(
-                                fontSize: screenWidth / 90,
-                                color: _subPageSelected == 2
-                                    ? Color.fromARGB(255, 0, 0, 128)
-                                    : Colors.black,
-                                fontWeight: _subPageSelected == 2
-                                    ? FontWeight.bold
-                                    : FontWeight.normal,
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _subPageSelected = 1;
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                              child: Text(
+                                'Registration',
+                                style: TextStyle(
+                                  fontSize: screenWidth / 90,
+                                  color: _subPageSelected == 1
+                                      ? Color.fromARGB(255, 0, 0, 128)
+                                      : Colors.black,
+                                  fontWeight: _subPageSelected == 1
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          height: screenHeight / 15,
-                        ),
-                      ],
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _subPageSelected = 2;
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                              child: Text(
+                                'Constitution',
+                                style: TextStyle(
+                                  fontSize: screenWidth / 90,
+                                  color: _subPageSelected == 2
+                                      ? Color.fromARGB(255, 0, 0, 128)
+                                      : Colors.black,
+                                  fontWeight: _subPageSelected == 2
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                ),
+                              ),
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _subPageSelected = 3;
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                              child: Text(
+                                'Core Commitee',
+                                style: TextStyle(
+                                  fontSize: screenWidth / 90,
+                                  color: _subPageSelected == 3
+                                      ? Color.fromARGB(255, 0, 0, 128)
+                                      : Colors.black,
+                                  fontWeight: _subPageSelected == 3
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                ),
+                              ),
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _subPageSelected = 4;
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                              child: Text(
+                                'Executive Committee',
+                                style: TextStyle(
+                                  fontSize: screenWidth / 90,
+                                  color: _subPageSelected == 4
+                                      ? Color.fromARGB(255, 0, 0, 128)
+                                      : Colors.black,
+                                  fontWeight: _subPageSelected == 4
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                ),
+                              ),
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _subPageSelected = 5;
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                              child: Text(
+                                'Conveners and Advisors',
+                                style: TextStyle(
+                                  fontSize: screenWidth / 90,
+                                  color: _subPageSelected == 5
+                                      ? Color.fromARGB(255, 0, 0, 128)
+                                      : Colors.black,
+                                  fontWeight: _subPageSelected == 5
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: screenHeight / 15,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(screenWidth / 200),
-                  width: screenWidth / 2,
-                  child: subpages[_subPageSelected],
-                ),
-              ],
-            ),
-            FooterDesktop(),
-          ],
+                  Container(
+                    padding: EdgeInsets.all(screenWidth / 200),
+                    width: screenWidth / 2,
+                    child: subpages[_subPageSelected],
+                  ),
+                ],
+              ),
+              FooterDesktop(),
+            ],
+          ),
         ),
       ),
     );

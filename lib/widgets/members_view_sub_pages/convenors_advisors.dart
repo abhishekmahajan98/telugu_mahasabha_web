@@ -3,12 +3,11 @@ import 'package:telugu_mahasabha_web/constants/memberslist.dart';
 import 'package:telugu_mahasabha_web/constants/navbar_constants.dart';
 
 
-
-class MembersViewMain extends StatelessWidget {
+class ConvenorsAdvisors extends StatelessWidget {
 
   final double screenWidth;
   final bool showTitle;
-  const MembersViewMain({Key key, this.screenWidth, this.showTitle})
+  const ConvenorsAdvisors({Key key, this.screenWidth, this.showTitle})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -65,65 +64,65 @@ class MembersViewMain extends StatelessWidget {
           headingRowHeight: MediaQuery.of(context).size.height/13,
 
           columns: [
-          DataColumn(label: Container(
-           width: MediaQuery.of(context).size.width/6,
-              child: Text('Post ',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                    color: Color.fromARGB(255, 0, 0, 128)
-                ),
-              )
-             )
-          ),
-          DataColumn(label: Container(
-              width: MediaQuery.of(context).size.width/5,
-              child: Text('Name',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                    color: Color.fromARGB(255, 0, 0, 128)
-                ),
-              )
-          )
-          ),
-          DataColumn(label: Container(
-              width: MediaQuery.of(context).size.width/3,
-              child: Text('Representative \nAssociation',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                   color: Color.fromARGB(255, 0, 0, 128)
-                ),
-              )
-          )
-          ),
+            DataColumn(label: Container(
+                width: MediaQuery.of(context).size.width/6,
+                child: Text('Post ',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
+                      color: Color.fromARGB(255, 0, 0, 128)
+                  ),
+                )
+            )
+            ),
+            DataColumn(label: Container(
+                width: MediaQuery.of(context).size.width/5,
+                child: Text('Name',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
+                      color: Color.fromARGB(255, 0, 0, 128)
+                  ),
+                )
+            )
+            ),
+            DataColumn(label: Container(
+                width: MediaQuery.of(context).size.width/3,
+                child: Text('Representative \nAssociation',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
+                      color: Color.fromARGB(255, 0, 0, 128)
+                  ),
+                )
+            )
+            ),
           ],
           rows:
-          listOfCoreCommittee.map(
-          ((element) => DataRow(
-          cells: <DataCell>[
-            DataCell(
-                Text(element["Name"],
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold
-                  )
-                )
-            ), //Extracting from Map element the value
-            DataCell(Text(element["Number"],
-                style: TextStyle(
-                    fontWeight: FontWeight.bold
-                )
+          listofConvenorsAdvisors.map(
+            ((element) => DataRow(
+              cells: <DataCell>[
+                DataCell(
+                    Text(element["Role"],
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold
+                        )
+                    )
+                ), //Extracting from Map element the value
+                DataCell(Text(element["Name"],
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold
+                    )
+                )),
+                DataCell(Text(element["AssocRole"],
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold
+                    )
+                )),
+              ],
             )),
-            DataCell(Text(element["State"],
-                style: TextStyle(
-                    fontWeight: FontWeight.bold
-                )
-            )),
-            ],
-        )),
-        )
-            .toList(),
+          )
+              .toList(),
         ),
         SizedBox(height: screenWidth/5,),
       ],

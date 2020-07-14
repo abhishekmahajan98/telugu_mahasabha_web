@@ -30,51 +30,58 @@ class _MembersViewTabletState extends State<MembersViewTablet> {
     return Scaffold(
       backgroundColor: backgroundClr,
       drawer: SideDrawerTablet(),
-      body: ListView(
-        children: [
-          NavigationBarTablet(
-            screenHeight: screenHeight,
-            screenWidth: screenWidth,
+      body: Container(
+        decoration: BoxDecoration(
+          image: new DecorationImage(
+            image: new AssetImage('assets/images/backgroundimage.jpg'),
+            fit: BoxFit.fill,
           ),
-          Card(
-            color: buttonbarClr,
-            child: ExpansionTile(
-              // /backgroundColor: buttonbarClr,
-              title: Center(
-                child: Text(
-                  subpageName[_selectedPage],
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              children: [
-                ListTile(
-                  onTap: () {
-                    setState(() {
-                      _selectedPage = 0;
-                    });
-                  },
-                  leading: Text(
-                    subpageName[0],
+        ),
+        child: ListView(
+          children: [
+            NavigationBarTablet(
+              screenHeight: screenHeight,
+              screenWidth: screenWidth,
+            ),
+            Card(
+              color: buttonbarClr,
+              child: ExpansionTile(
+                // /backgroundColor: buttonbarClr,
+                title: Center(
+                  child: Text(
+                    subpageName[_selectedPage],
                     style: TextStyle(
                       color: Colors.white,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
+                children: [
+                  ListTile(
+                    onTap: () {
+                      setState(() {
+                        _selectedPage = 0;
+                      });
+                    },
+                    leading: Text(
+                      subpageName[0],
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
 
-              ],
+                ],
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: subpages[_selectedPage],
-          ),
-          FooterTablet(),
-        ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: subpages[_selectedPage],
+            ),
+            FooterTablet(),
+          ],
+        ),
       ),
-
     );
   }
 }
