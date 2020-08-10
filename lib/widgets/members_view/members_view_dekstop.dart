@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:telugu_mahasabha_web/constants/colorConstants.dart';
+import 'package:telugu_mahasabha_web/widgets/Rts_members_view/associate_members.dart';
+import 'package:telugu_mahasabha_web/widgets/Rts_members_view/association_members.dart';
+import 'package:telugu_mahasabha_web/widgets/Rts_members_view/life_members.dart';
+import 'package:telugu_mahasabha_web/widgets/Rts_members_view/patron_association.dart';
+import 'package:telugu_mahasabha_web/widgets/Rts_members_view/patron_members.dart';
 import 'package:telugu_mahasabha_web/widgets/footer/footer_desktop.dart';
 import 'package:telugu_mahasabha_web/widgets/members_view_sub_pages/members_view_main.dart';
 
@@ -39,10 +44,24 @@ class _MembersViewDesktopState extends State<MembersViewDesktop> {
           .size
           .width;
       List<Widget> subpages = [
-        MembersViewMain(
+        /*MembersViewMain(
           screenWidth: screenWidth,
-
+        ),*/
+      PatronAssociation(
+        screenWidth: screenWidth,
         ),
+        AssociationsMembers(
+          screenWidth: screenWidth,
+        ),
+        PatronMembers(
+          screenWidth: screenWidth,
+        ),
+        LifeMembers(
+          screenWidth: screenWidth,
+        ),
+        AssociateMembers(
+          screenWidth: screenWidth,
+        )
       ];
       return Scaffold(
         backgroundColor: backgroundClr,
@@ -64,7 +83,7 @@ class _MembersViewDesktopState extends State<MembersViewDesktop> {
                   children: [
                     Card(
                       child: Container(
-                        width: screenWidth / 7,
+                        width: screenWidth / 5,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
@@ -89,7 +108,7 @@ class _MembersViewDesktopState extends State<MembersViewDesktop> {
                               child: Container(
                                 padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
                                 child: Text(
-                                  'Executive Members',
+                                  'PATRON ASSOCIATION MEMBERS',
                                   style: TextStyle(
                                     fontSize: screenWidth / 90,
                                     color: _subPageSelected == 0
@@ -102,6 +121,95 @@ class _MembersViewDesktopState extends State<MembersViewDesktop> {
                                 ),
                               ),
                             ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  _subPageSelected = 1;
+                                });
+                              },
+                              child: Container(
+                                padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                                child: Text(
+                                  'ASSOCIATION MEMBERSHIP',
+                                  style: TextStyle(
+                                    fontSize: screenWidth / 90,
+                                    color: _subPageSelected == 1
+                                        ? Color.fromARGB(255, 0, 0, 128)
+                                        : Colors.black,
+                                    fontWeight: _subPageSelected == 1
+                                        ? FontWeight.bold
+                                        : FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  _subPageSelected = 2;
+                                });
+                              },
+                              child: Container(
+                                padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                                child: Text(
+                                  'PATRON MEMBERSHIP',
+                                  style: TextStyle(
+                                    fontSize: screenWidth / 90,
+                                    color: _subPageSelected == 2
+                                        ? Color.fromARGB(255, 0, 0, 128)
+                                        : Colors.black,
+                                    fontWeight: _subPageSelected == 2
+                                        ? FontWeight.bold
+                                        : FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  _subPageSelected = 3;
+                                });
+                              },
+                              child: Container(
+                                padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                                child: Text(
+                                  'LIFE MEMBERSHIP',
+                                  style: TextStyle(
+                                    fontSize: screenWidth / 90,
+                                    color: _subPageSelected == 3
+                                        ? Color.fromARGB(255, 0, 0, 128)
+                                        : Colors.black,
+                                    fontWeight: _subPageSelected == 3
+                                        ? FontWeight.bold
+                                        : FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  _subPageSelected = 4;
+                                });
+                              },
+                              child: Container(
+                                padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
+                                child: Text(
+                                  'ASSOCIATE  MEMBERSHIP',
+                                  style: TextStyle(
+                                    fontSize: screenWidth / 90,
+                                    color: _subPageSelected == 4
+                                        ? Color.fromARGB(255, 0, 0, 128)
+                                        : Colors.black,
+                                    fontWeight: _subPageSelected == 4
+                                        ? FontWeight.bold
+                                        : FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                            ),
+
 
                             SizedBox(
                               height: screenHeight / 15,
