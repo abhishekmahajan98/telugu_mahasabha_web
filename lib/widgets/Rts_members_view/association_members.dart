@@ -59,8 +59,8 @@ class AssociationsMembers extends StatelessWidget {
           ),
         ),*/
         DataTable(
-          dataRowHeight: MediaQuery.of(context).size.height/11,
-          headingRowHeight: MediaQuery.of(context).size.height/13,
+          //dataRowHeight: MediaQuery.of(context).size.height/11,
+          //headingRowHeight: MediaQuery.of(context).size.height/13,
 
           columns: [
             DataColumn(label: Container(
@@ -68,8 +68,9 @@ class AssociationsMembers extends StatelessWidget {
                 child: Text('Logo',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                      color: Color.fromARGB(255, 0, 0, 128)
+                      fontSize: screenWidth == null ? screenWidth / 80:15,
+                      color: Color.fromARGB(255, 0, 0, 128),
+                      //fontSize: screenWidth/80
                   ),
                 )
             )
@@ -80,8 +81,9 @@ class AssociationsMembers extends StatelessWidget {
                 child: Text('Association ',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                      color: Color.fromARGB(255, 0, 0, 128)
+                    fontSize: screenWidth == null ? screenWidth / 80:15,
+                      color: Color.fromARGB(255, 0, 0, 128),
+                      //fontSize: screenWidth/80
                   ),
                 )
             )
@@ -91,8 +93,9 @@ class AssociationsMembers extends StatelessWidget {
                 child: Text('State',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                      color: Color.fromARGB(255, 0, 0, 128)
+                    fontSize: screenWidth == null ? screenWidth / 80:15,
+                      color: Color.fromARGB(255, 0, 0, 128),
+                      //fontSize: screenWidth/80
                   ),
                 )
             )
@@ -106,8 +109,7 @@ class AssociationsMembers extends StatelessWidget {
                 DataCell(
                 CircleAvatar(
                   radius: 40,
-
-                    backgroundColor: Colors.transparent,
+                    backgroundColor: Color(0xff51d6ed),
                     child: Image.network(element["Logo"])
                 )
 
@@ -116,13 +118,18 @@ class AssociationsMembers extends StatelessWidget {
                 DataCell(
                     Text(element["Association"],
                         style: TextStyle(
-                            fontWeight: FontWeight.bold
+                            fontWeight: FontWeight.bold,
+                          color: Colors.redAccent,
+                          fontSize: screenWidth == null ? screenWidth / 80:15,
+
                         )
                     )
                 ), //Extracting from Map element the value
                 DataCell(Text(element["State"],
                     style: TextStyle(
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.bold,
+                      color: Color(0xff58b048),
+                      fontSize: screenWidth == null ? screenWidth / 80:15,
                     )
                 )),
               ],

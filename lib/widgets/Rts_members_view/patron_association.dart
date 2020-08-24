@@ -68,8 +68,9 @@ class PatronAssociation extends StatelessWidget {
                 child: Text('Logo',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                      color: Color.fromARGB(255, 0, 0, 128)
+                      //fontSize: screenWidth == null ? screenWidth / 30 : 18,
+                      color: Color.fromARGB(255, 0, 0, 128),
+                      fontSize: screenWidth/80
                   ),
                 )
             )
@@ -79,8 +80,9 @@ class PatronAssociation extends StatelessWidget {
                 child: Text('Association ',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                      color: Color.fromARGB(255, 0, 0, 128)
+                      //fontSize: screenWidth == null ? screenWidth / 30 : 18,
+                      color: Color.fromARGB(255, 0, 0, 128),
+                      fontSize: screenWidth/80
                   ),
                 )
             )
@@ -90,8 +92,9 @@ class PatronAssociation extends StatelessWidget {
                 child: Text('State',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: screenWidth == null ? screenWidth / 30 : 18,
-                      color: Color.fromARGB(255, 0, 0, 128)
+                      //fontSize: screenWidth == null ? screenWidth / 30 : 18,
+                      color: Color.fromARGB(255, 0, 0, 128),
+                      fontSize: screenWidth/80
                   ),
                 )
             )
@@ -108,12 +111,17 @@ class PatronAssociation extends StatelessWidget {
                 ) ,//Extracting from Map element the value
                 DataCell(Text(element["Associations"],
                     style: TextStyle(
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.bold,
+                      color: Colors.redAccent,
+                        fontSize: screenWidth/80
                     )
                 )),
                 DataCell(Text(element["State"],
                     style: TextStyle(
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.bold,
+                      color: Color(0xff58b048),
+                        fontSize: screenWidth/80
+
                     )
                 )),
 
