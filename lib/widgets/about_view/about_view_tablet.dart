@@ -26,7 +26,7 @@ class _AboutViewTabletState extends State<AboutViewTablet> {
     final double screenWidth = MediaQuery.of(context).size.width;
     List<Widget> subpages = [
       AboutViewMain(
-        screenWidth: screenWidth,
+        isMobile: true,
       ),
       CustomPhotoView(
         isMobile: true,

@@ -3,9 +3,9 @@ import 'package:telugu_mahasabha_web/constants/navbar_constants.dart';
 import 'package:telugu_mahasabha_web/constants/temp.dart';
 
 class AboutViewMain extends StatelessWidget {
-  final double screenWidth;
+  final bool isMobile;
   final bool showTitle;
-  const AboutViewMain({Key key, this.screenWidth, this.showTitle})
+  const AboutViewMain({Key key, this.isMobile=false, this.showTitle})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -22,10 +22,10 @@ class AboutViewMain extends StatelessWidget {
           abtText,
           style: TextStyle(
             color: Colors.black,
-            fontSize: screenWidth == null ? screenWidth / 30 : 18,
+            fontSize: isMobile  ? 18 : 20,
           ),
         ),
-        SizedBox(height: screenWidth/5,),
+        SizedBox(height:  isMobile  ? 18 :50,),
       ],
     );
   }

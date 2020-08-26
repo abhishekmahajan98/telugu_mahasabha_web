@@ -4,9 +4,9 @@ import 'package:telugu_mahasabha_web/constants/navbar_constants.dart';
 import 'package:telugu_mahasabha_web/constants/rts_members.dart';
 
 class PatronAssociation extends StatelessWidget {
-  final double screenWidth;
+  final bool isMobile;
   final bool showTitle;
-  const PatronAssociation({Key key, this.screenWidth, this.showTitle})
+  const PatronAssociation({Key key, this.isMobile=false, this.showTitle})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -65,36 +65,37 @@ class PatronAssociation extends StatelessWidget {
           columns: [
             DataColumn(label: Container(
                 width: MediaQuery.of(context).size.width/8,
-                child: Text('Logo',
+                child: SelectableText('Logo',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       //fontSize: screenWidth == null ? screenWidth / 30 : 18,
                       color: Color.fromARGB(255, 0, 0, 128),
-                      fontSize: screenWidth/80
+                    fontSize:isMobile?16:24,
                   ),
+                  enableInteractiveSelection: true,
                 )
             )
             ),
             DataColumn(label: Container(
                 width: MediaQuery.of(context).size.width/6,
-                child: Text('Association ',
+                child: SelectableText('Association ',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       //fontSize: screenWidth == null ? screenWidth / 30 : 18,
                       color: Color.fromARGB(255, 0, 0, 128),
-                      fontSize: screenWidth/80
+                    fontSize:isMobile?16:24,
                   ),
                 )
             )
             ),
             DataColumn(label: Container(
                 width: MediaQuery.of(context).size.width/5,
-                child: Text('State',
+                child: SelectableText('State',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       //fontSize: screenWidth == null ? screenWidth / 30 : 18,
                       color: Color.fromARGB(255, 0, 0, 128),
-                      fontSize: screenWidth/80
+                    fontSize:isMobile?16:24,
                   ),
                 )
             )
@@ -109,18 +110,18 @@ class PatronAssociation extends StatelessWidget {
                     Image.network(element["Logo"])
 
                 ) ,//Extracting from Map element the value
-                DataCell(Text(element["Associations"],
+                DataCell(SelectableText(element["Associations"],
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                       color: Colors.redAccent,
-                        fontSize: screenWidth/80
+                      fontSize:isMobile?16:24,
                     )
                 )),
-                DataCell(Text(element["State"],
+                DataCell(SelectableText(element["State"],
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                       color: Color(0xff58b048),
-                        fontSize: screenWidth/80
+                      fontSize:isMobile?16:24,
 
                     )
                 )),
@@ -134,7 +135,7 @@ class PatronAssociation extends StatelessWidget {
               .toList(),
         ),
 
-        SizedBox(height: screenWidth/5,),
+        SizedBox(height:MediaQuery.of(context).size.height/3),
       ],
     );
   }

@@ -14,6 +14,13 @@ final List<Map<String, String>> listOfAssociationMembers = [
 {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2FRaghava%20kala%20mandir%2CBellary.jpg?alt=media&token=9dfb2eb0-48c5-47ac-89a5-02caba232567","Association": "Raghava Kala Mandir, Bellary", "State": "Karnataka"},
 {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2FTelugu%20bhasa%20samkruti%2C%20abhimana%20sangham%2C%20Bhuvneshwar.jpg?alt=media&token=d959c028-6c6c-4309-ae83-f19b7db19eac","Association": "Telugu Bhasha Sanskruti Abhimana Sangham", "State": "Bhuvaneswar"},
 {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2FKolcutta.jpg?alt=media&token=d445a596-4838-4843-9925-55b85bac49ae","Association": "Andhra Association Kolcutta", "State": "Kolcutta"},
+  {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2Fdadra%20nagar%20haveli.jpg?alt=media&token=2a775e61-fe24-4c1e-8de5-412cbb351d3d","Association": "Dadra nagar haveli telugu sangham", "State": "Dadra nagra haveli"},
+  {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2Fvapi.jpg?alt=media&token=784bfdb2-1335-4f83-8752-bce20c85a8b1","Association": "Andhra cultural association ", "State": "Vapi"},
+  {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2FMTS.JPG?alt=media&token=b30468c1-25ea-45be-87cd-762fccdb9f8c","Association": "Mumbai telugu samithi", "State": "Mumbai"},
+  {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2FThiruvananthapuram.jpg?alt=media&token=c73c8eee-815a-4cc6-82bf-00c2b054129c","Association": "Telugu samskritha sangham Thiruvananthpuram", "State": "Thrivunanthapuram"},
+  {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2FKarnataka%20telugu%20sangham.jpg?alt=media&token=136c26be-74b3-45d1-8b50-7a71f33a01c6","Association": "Karnataka telugu sangham,TB dam", "State": "Tungabhadra"},
+  {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2Fbharampuram.jpg?alt=media&token=f4039b45-6e34-48e3-bddb-5f1049495129","Association": "Andhra bhashaaabhivardhini samajam", "State": "Bharampuram"},
+  {"Logo":"https://firebasestorage.googleapis.com/v0/b/rts-web-dfa05.appspot.com/o/LOGO%2Fvikas%20natya%20mandali.jpg?alt=media&token=2cbe3dc9-58e0-4f71-89de-b585071011f3","Association": "Vikas natya mandali", "State": "Kharagpur"},
 ];
 /*final List<Map<String, String>> listOfAssociationMembers = [
 /*{"Association": "Andhra Maha Sabha, Pondichery", "State": "Pondichery"},
@@ -31,12 +38,13 @@ final List<Map<String, String>> listOfAssociationMembers = [
 ];*/
 final List<Map<String, String>> listOfpatronmembers =[
   {"Name":"N.Bose Babu","State":"Gujarat"},
-  {"Name":"P,V.P,C.Prasad","State":"Gujarat"},
+  {"Name":"P.V.P.C.Prasad","State":"Gujarat"},
   {"Name":"Radha Mohan","State":"Maharashtra"},
   {"Name":"K. Venkata Krishna","State":"Tamil Nadu"},
   {"Name":"AVVSSK Krishna Rao","State":"Gujarat"},
   {"Name":"TVN Murthy","State":"Gujarat"},
   {"Name":"D.Prasada Rao","State":"Chennai"},
+  {"Name":"L Sita","State":"Delhi"},
 
 ];
 final List<Map<String, String>> listOflifemembers =[
@@ -250,6 +258,22 @@ final List<Map<String, String>> listOflifemembers =[
   {"Name":"B Prabhakara Rao","State":"West Bengal"},
   {"Name":"A. Chandra Sekhar","State":"Tamil Nadu"},
   {"Name":"KS Jeeva Ratnam","State":"Karnataka"},
+  {"Name":"T R Srinivasa Prasad", "State": "Tamil nadu"},
+  {"Name":"B N Sreedhara Murty", "State": "Tamil nadu"},
+  {"Name":"B L Viswa Murty", "State": "Tamil nadu"},
+  {"Name":"S.S.Siva Kumar", "State": "Tamil nadu"},
+  {"Name":"D S Jayant Kumar", "State": "Tamil nadu"},
+  {"Name":"Muddu Venkata Lakshmi", "State": "Karnataka"},
+  {"Name":"Paluri Venkata Janaki", "State": "Uttar pradesh"},
+  {"Name":"Tirumala Amukta Malyada", "State": "Tamil nadu"},
+  {"Name":"Talapudi Gowri", "State": "Orissa"},
+  {"Name":"Amballa Janardhan", "State": "Maharashtra"},
+  {"Name":"Madhavilata", "State": "Karnataka"},
+  {"Name":"G R Venkateswarlu", "State": "Karnataka"},
+  {"Name":"N Prakash", "State": "Karnataka"},
+  {"Name":"H Vishnu Vardhana", "State": "Karnataka"},
+  {"Name":"B. Ramanppa", "State": "Karnataka"},
+  {"Name":"Devanna", "State": "Karnataka"},
 
  ];
 final List<Map<String, String>> listOfassociatemembers =[

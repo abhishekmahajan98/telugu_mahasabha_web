@@ -25,7 +25,7 @@ class NewEvents extends StatelessWidget {
             Expanded(
               child: Marquee(
                 child: Text(
-                  'Second Part of 5th Annual celebrations International Kavi Sammelanam will be held virtually on  5th July 2020 from 9:15 am to 6 pm.',
+                  'RTS IN ASSOCIATION WITH 40+ ORGANISATIONS IS CELEBRATING TELUGU BHASHA PAKSHOTSAVALU FROM 29TH AUGUST TO 13 TH SEPT 2020. IT INCLUDES TELUGU BHASA DINOTSAVAM ON 29TH AUGUST, TELANGANA BHASHA DINOTSAVAM ON 9TH SEPT AND 125TH JAYANTI OF VISWANADHA SATYANARAYANA ON 10TH SEPT. 2020',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 20,
@@ -34,7 +34,7 @@ class NewEvents extends StatelessWidget {
                 ),
                 //scrollAxis: Axis.horizontal,
                 textDirection: TextDirection.ltr,
-                animationDuration: Duration(seconds: 10),
+                animationDuration: Duration(seconds: 30),
                 //backDuration: Duration(milliseconds: 5000),
                 //pauseDuration: Duration(milliseconds: 2500),
                 directionMarguee: DirectionMarguee.oneDirection,

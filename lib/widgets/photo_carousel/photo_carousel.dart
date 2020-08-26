@@ -12,18 +12,32 @@ class PhotoCarousel extends StatefulWidget {
 
 class _PhotoCarouselState extends State<PhotoCarousel> {
   final List<AssetImage> imgs = [
-    AssetImage('assets/images/home_carousel/5july.jpeg'),
-    AssetImage('assets/images/home_carousel/1.png'),
-    AssetImage('assets/images/home_carousel/2.png'),
-    AssetImage('assets/images/home_carousel/3.jpg'),
-   AssetImage('assets/images/home_carousel/4.jpg'),
-    AssetImage('assets/images/home_carousel/5.jpg'),
-    AssetImage('assets/images/home_carousel/6.jpg'),
-    AssetImage('assets/images/home_carousel/7.jpg'),
-    AssetImage('assets/images/home_carousel/8.jpg'),
-   AssetImage('assets/images/home_carousel/9.jpg'),
-    AssetImage('assets/images/home_carousel/10.jpg'),
-    AssetImage('assets/images/home_carousel/12.jpg'),
+    //AssetImage('assets/images/home_carousel/5july.jpeg'),
+    //AssetImage('assets/images/home_carousel/1.png'),
+    //AssetImage('assets/images/home_carousel/2.png'),
+    //AssetImage('assets/images/home_carousel/3.jpg'),
+  // AssetImage('assets/images/home_carousel/4.jpg'),
+   // AssetImage('assets/images/home_carousel/5.jpg'),
+   // AssetImage('assets/images/home_carousel/6.jpg'),
+   // AssetImage('assets/images/home_carousel/7.jpg'),
+    //AssetImage('assets/images/home_carousel/8.jpg'),
+  // AssetImage('assets/images/home_carousel/9.jpg'),
+  //  AssetImage('assets/images/home_carousel/10.jpg'),
+   // AssetImage('assets/images/home_carousel/12.jpg'),
+    AssetImage('assets/images/home_carousel/TBP.png'),
+    AssetImage('assets/images/home_carousel/TBP1.jpg'),
+    AssetImage('assets/images/home_carousel/TBP2.png'),
+    AssetImage('assets/images/home_carousel/TBP3.png'),
+    AssetImage('assets/images/home_carousel/TBP4.png'),
+    AssetImage('assets/images/home_carousel/TBP5.png'),
+    AssetImage('assets/images/home_carousel/TBP6.png'),
+    AssetImage('assets/images/home_carousel/TBP7.png'),
+    AssetImage('assets/images/home_carousel/TBP8.png'),
+    AssetImage('assets/images/home_carousel/TBP9.png'),
+    AssetImage('assets/images/home_carousel/TBP10.png'),
+
+
+
   ];
 
   @override
@@ -37,7 +51,7 @@ class _PhotoCarouselState extends State<PhotoCarousel> {
             : widget.carouselHeight,
         //color: Color.fromARGB(255, 0, 0, 255),
         child: Carousel(
-          boxFit: BoxFit.fill,
+          boxFit: BoxFit.contain,
           images: imgs,
           dotSize: 6.0,
           dotSpacing: 15.0,

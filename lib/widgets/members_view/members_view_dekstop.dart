@@ -48,10 +48,10 @@ class _MembersViewDesktopState extends State<MembersViewDesktop> {
           screenWidth: screenWidth,
         ),*/
       PatronAssociation(
-        screenWidth: screenWidth,
+
         ),
         AssociationsMembers(
-          screenWidth: screenWidth,
+
         ),
         PatronMembers(
           screenWidth: screenWidth,

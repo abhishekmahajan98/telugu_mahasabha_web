@@ -65,7 +65,7 @@ class LifeMembers extends StatelessWidget {
           columns: [
             DataColumn(label: Container(
                 width: MediaQuery.of(context).size.width/6,
-                child: Text('Name ',
+                child: SelectableText('Name ',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: screenWidth == null ? screenWidth / 30 : 18,
@@ -76,7 +76,7 @@ class LifeMembers extends StatelessWidget {
             ),
             DataColumn(label: Container(
                 width: MediaQuery.of(context).size.width/5,
-                child: Text('State',
+                child: SelectableText('State',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: screenWidth == null ? screenWidth / 30 : 18,
@@ -92,13 +92,13 @@ class LifeMembers extends StatelessWidget {
             ((element) => DataRow(
               cells: <DataCell>[
                 DataCell(
-                    Text(element["Name"],
+                    SelectableText(element["Name"],
                         style: TextStyle(
                             fontWeight: FontWeight.bold
                         )
                     )
                 ), //Extracting from Map element the value
-                DataCell(Text(element["State"],
+                DataCell(SelectableText(element["State"],
                     style: TextStyle(
                         fontWeight: FontWeight.bold
                     )

@@ -37,7 +37,7 @@ class _AboutViewDesktopState extends State<AboutViewDesktop> {
     final double screenWidth = MediaQuery.of(context).size.width;
     List<Widget> subpages = [
       AboutViewMain(
-        screenWidth: screenWidth,
+
         showTitle: true,
       ),
       CustomPhotoView(

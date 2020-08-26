@@ -25,10 +25,10 @@ class _MembersViewTabletState extends State<MembersViewTablet> {
     final double screenWidth = MediaQuery.of(context).size.width;
     List<Widget> subpages = [
       PatronAssociation(
-        screenWidth: screenWidth,
+        isMobile: true,
       ),
       AssociationsMembers(
-        screenWidth: screenWidth,
+        isMobile: true,
       ),
       PatronMembers(
         screenWidth: screenWidth,
