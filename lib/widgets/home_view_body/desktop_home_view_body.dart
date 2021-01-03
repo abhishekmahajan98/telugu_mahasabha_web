@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telugu_mahasabha_web/widgets/new_events/new_event_test.dart';
 
 import 'package:telugu_mahasabha_web/widgets/new_events/new_events.dart';
 import 'package:telugu_mahasabha_web/widgets/photo_carousel/photo_carousel.dart';
@@ -19,7 +20,8 @@ class DesktopHomeViewBody extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  NewEvents(),
+                  //NewEvents(),
+                  NewEventsTest(),
                   PhotoCarousel(),
                 ],
               ),

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1069287545462",
+    "firebase_url": "https://rts-web-dfa05.firebaseio.com",
+    "project_id": "rts-web-dfa05",
+    "storage_bucket": "rts-web-dfa05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069287545462:android:030da71f0dfaa73e6c1d57",
+        "android_client_info": {
+          "package_name": "com.example.telugu_mahasabha_web"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069287545462-3isk9tohs9vol6cmjh461sc8j3fq3848.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC5vjdqPzGymPjm4LmfCU1R-JZ-Go4O9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069287545462-3isk9tohs9vol6cmjh461sc8j3fq3848.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
