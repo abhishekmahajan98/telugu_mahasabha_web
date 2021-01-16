@@ -3,6 +3,7 @@ import 'package:telugu_mahasabha_web/widgets/new_events/new_event_test.dart';
 
 import 'package:telugu_mahasabha_web/widgets/new_events/new_events.dart';
 import 'package:telugu_mahasabha_web/widgets/photo_carousel/photo_carousel.dart';
+import 'package:telugu_mahasabha_web/widgets/photo_carousel/photo_carousel_test.dart';
 import 'package:telugu_mahasabha_web/widgets/updates_box/updates_box_desktop.dart';
 
 class DesktopHomeViewBody extends StatelessWidget {
@@ -21,8 +22,9 @@ class DesktopHomeViewBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   //NewEvents(),
-                  NewEventsTest(),
-                  PhotoCarousel(),
+                  TestPage(),
+                  //PhotoCarousel(),
+                  PhotoCarouselTest()
                 ],
               ),
             ),
